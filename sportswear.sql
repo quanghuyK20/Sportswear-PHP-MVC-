@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.1.1
+-- version 5.3.0-dev+20220603.d104e8b1bb
 -- https://www.phpmyadmin.net/
 --
--- Máy chủ: 127.0.0.1
--- Thời gian đã tạo: Th12 08, 2021 lúc 06:10 PM
+-- Máy chủ: localhost
+-- Thời gian đã tạo: Th6 04, 2022 lúc 05:41 AM
 -- Phiên bản máy phục vụ: 10.4.21-MariaDB
--- Phiên bản PHP: 7.4.25
+-- Phiên bản PHP: 8.1.5
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -188,7 +188,7 @@ CREATE TABLE `tbl_contact` (
 --
 
 INSERT INTO `tbl_contact` (`id_contact`, `phone`, `email`, `address`, `support`, `logo`, `link_fb`, `link_tw`, `link_ins`, `link_youtube`) VALUES
-(1, '0935640559', 'tiennguyentran201@gmail.com', 'Trường Đại học Công nghệ thông tin truyền thông Việt - Hàn', '<ul><li>Ch&iacute;nh s&aacute;ch<ul><li>Ch&iacute;nh s&aacute;ch thanh to&aacute;n</li><li>Ch&iacute;nh s&aacute;ch vận chuyển</li><li>Ch&iacute;nh s&aacute;ch đổi trả bảo h&agrave;nh</li><li>Ch&iacute;nh s&aacute;ch bảo mật</li></ul></li></ul>', 'anhtest5-removebg-preview.png', 'https://www.facebook.com/P229-Sport-Shop-109694361329627', '', 'https://www.instagram.com/noodle.jar/', '');
+(1, '147258369', 'huyquang748@gmail.com', 'Trường Đại học Công nghệ thông tin truyền thông Việt - Hàn', '<ul><li>Ch&iacute;nh s&aacute;ch<ul><li>Ch&iacute;nh s&aacute;ch thanh to&aacute;n</li><li>Ch&iacute;nh s&aacute;ch vận chuyển</li><li>Ch&iacute;nh s&aacute;ch đổi trả bảo h&agrave;nh</li><li>Ch&iacute;nh s&aacute;ch bảo mật</li></ul></li></ul>', 'anhtest5-removebg-preview.png', 'koco', '', 'koco', '');
 
 -- --------------------------------------------------------
 
@@ -858,11 +858,11 @@ CREATE TABLE `tbl_login` (
 --
 
 INSERT INTO `tbl_login` (`id`, `email`, `password`, `username`, `phone`, `img_profile`, `code`, `type`) VALUES
-(5, 'tiennguyentran201@gmail.com', '2a26569e98b26668f39e98e6baef2d54', 'Trần Tiến ', '0935640559', 'z2291102527507_b4c32c4dda5d69e6add5ba1eaef6c2d1.jpg', '0', 2),
-(9, 'ngoctien@gmail.com', '2a26569e98b26668f39e98e6baef2d54', 'Ngoc Tien', '0935xxxxxxx', 'facebook-cap-nhat-avatar-doi-voi-tai-khoan-khong-su-dung-anh-dai-dien-e4abd14d.jpg', '0', 0),
-(14, 'tientumtim201@gmail.com', '2a26569e98b26668f39e98e6baef2d54', 'Nguyễn Trần Tiến', '0905343491', '191736606_171310201666179_8028458714529778871_n.jpg', '823948', 0),
-(4049, 'ua25052004@gmail.com', '8e8fe632000e47e05eef419be7762a3d', 'Nguyễn Như Ý', '08992437555', '043a03c97b179749ce06.jpg', '0', 0),
-(4833, 'anhduccva94@gmail.com', '3178914d6e429889da9de8df2a3b8928', 'Trần Lê Anh Đức', '0905132132', '250491052_1748849405310455_708711169477241118_n.jpg', '0', 1);
+(5, 'huyquang748@gmail.com', 'e10adc3949ba59abbe56e057f20f883e', 'Quang Huy', '145623697', '123.jpeg', '0', 2),
+(9, 'ngoctien@gmail.com', '2a26569e98b26668f39e98e6baef2d54', 'Ngoc Tien', '0935xxxxxxx', 'koco', '0', 0),
+(14, 'tientumtim201@gmail.com', '2a26569e98b26668f39e98e6baef2d54', 'Lê Quang Huy', '0147258369', '191736606_171310201666179_8028458714529778871_n.jpg', '823948', 0),
+(4049, 'ua25052004@gmail.com', '8e8fe632000e47e05eef419be7762a3d', 'ABCCCCCC', '14566884', '043a03c97b179749ce06.jpg', '0', 0),
+(4833, 'anhduccva94@gmail.com', '3178914d6e429889da9de8df2a3b8928', 'Huy Lê', '14752266', '250491052_1748849405310455_708711169477241118_n.jpg', '0', 1);
 
 -- --------------------------------------------------------
 
@@ -905,25 +905,12 @@ CREATE TABLE `tbl_order` (
 --
 
 INSERT INTO `tbl_order` (`id_order`, `day`, `hour`, `date`, `sender_phone`, `sender_name`, `email`, `receiver_name`, `receiver_phone`, `country`, `city`, `district`, `address`, `total`, `username`, `order_status`) VALUES
-(14479, '2021-11-19', '07:16:10pm', '2021-11-19 - 07:16:10pm', '0935640559', 'Nguyễn Trần Tiến', 'tientumtim201@gmail.com', 'Nguyễn Như Ý', '0935640559', 'Việt Nam', 'Huế', 'Thành phố Huế', '63 Nguyễn Trọng Nhân', '6020000', 'Nguyễn Trần Tiến', 'Đang chờ xử lí'),
-(15366, '2021-11-20', '10:14:58pm', '2021-11-20 - 10:14:58pm', '0935640559', 'Nguyễn Trần Tiến', 'tientumtim201@gmail.com', 'Nguyễn Như Ý', '0935640559', 'Việt Nam', 'Huế', 'Thành phố Huế', '63 Nguyễn Trọng Nhân', '4520000', 'Nguyễn Trần Tiến', 'Mới'),
-(23889, '2021-11-19', '07:36:32pm', '2021-11-19 - 07:36:32pm', '0935640559', 'Nguyễn Trần Tiến', 'tientumtim201@gmail.com', 'Nguyễn Như Ý', '0935640559', 'Việt Nam', 'Huế', 'Thành phố Huế', '63 Nguyễn Trọng Nhân', '4722000', 'Nguyễn Trần Tiến', 'Đang chờ xử lí'),
-(24980, '2021-12-4', '03:20:40pm', '2021-12-4 - 03:20:40pm', '0912312313', 'Nguyễn Như Ý', 'ua25052004@gmail.com', 'Nguyễn Như Ý', '0912312313', 'Việt Nam', 'Huế', 'Thành phố Huế', '36 Nguyễn Trọng Nhân', '7500000', 'Nguyễn Như Ý', 'Đang chờ xử lí'),
-(27763, '2021-12-7', '03:50:23pm', '2021-12-7 - 03:50:23pm', '0905132132', 'Trần Lê Anh Đức', 'anhduccva94@gmail.com', 'Nguyễn Trần Tiến', '091321235', 'Việt Nam', 'Huế', 'Thành phố Huế', '20/4 Kim Long', '6400000', 'Trần Lê Anh Đức', 'Mới'),
-(32932, '2021-12-4', '03:14:04pm', '2021-12-4 - 03:14:04pm', '0912312313', 'Nguyễn Như Ý', 'ua25052004@gmail.com', 'Nguyễn Như Ý', '0912312313', 'Việt Nam', 'Huế', 'Thành phố Huế', '36 Nguyễn Trọng Nhân', '4000000', 'Nguyễn Như Ý', 'Mới'),
-(32938, '2021-11-19', '11:49:59pm', '2021-11-19 - 11:49:59pm', '0935640559', 'Nguyễn Trần Tiến', 'tientumtim201@gmail.com', 'Nguyễn Như Ý', '0935640559', 'Việt Nam', 'Huế', 'Thành phố Huế', '63 Nguyễn Trọng Nhân', '2020000', 'Nguyễn Trần Tiến', 'Đang chờ xử lí'),
-(44115, '2021-12-7', '12:09:07am', '2021-12-7 - 12:09:07am', '0935640559', 'Nguyễn Như Ý', 'ua25052004@gmail.com', 'Nguyễn Trần Tiến', '0935640559', 'Việt Nam', 'Huế', 'Thành phố Huế', '20/4 Kim Long', '4875000', 'Nguyễn Như Ý', 'Mới'),
-(45014, '2021-11-20', '08:22:42am', '2021-11-20 - 08:22:42am', '0935640559', 'Nguyễn Trần Tiến', 'tientumtim201@gmail.com', 'Nguyễn Như Ý', '0935640559', 'Việt Nam', 'Huế', 'Thành phố Huế', '63 Nguyễn Trọng Nhân', '4020000', 'Nguyễn Trần Tiến', 'Đang chờ xử lí'),
-(47145, '2021-11-29', '04:10:34pm', '2021-11-29 - 04:10:34pm', '0912312313', 'Nguyễn Trần Tiến', 'tientumtim201@gmail.com', 'Nguyễn Như Ý', '0912312313', 'Việt Nam', 'Huế', 'Thành phố Huế', '36 Nguyễn Trọng Nhân', '2044000', 'Nguyễn Trần Tiến', 'Đã hoàn thành'),
-(48333, '2021-12-4', '03:07:33pm', '2021-12-4 - 03:07:33pm', '0912312313', 'Nguyễn Như Ý', 'ua25052004@gmail.com', 'Nguyễn Như Ý', '0912312313', 'Việt Nam', 'Huế', 'Thành phố Huế', '36 Nguyễn Trọng Nhân', '6000000', 'Nguyễn Như Ý', 'Mới'),
-(50172, '2021-12-4', '03:17:15pm', '2021-12-4 - 03:17:15pm', '0912312313', 'Nguyễn Như Ý', 'ua25052004@gmail.com', 'Nguyễn Như Ý', '0912312313', 'Việt Nam', 'Huế', 'Thành phố Huế', '36 Nguyễn Trọng Nhân', '6000000', 'Nguyễn Như Ý', 'Mới'),
-(63585, '2021-11-20', '10:21:58pm', '2021-11-20 - 10:21:58pm', '0935640559', 'Nguyễn Trần Tiến', 'tientumtim201@gmail.com', 'Nguyễn Như Ý', '0935640559', 'Việt Nam', 'Huế', 'Thành phố Huế', '63 Nguyễn Trọng Nhân', '1420000', 'Nguyễn Trần Tiến', 'Mới'),
-(64500, '2021-11-28', '11:27:39pm', '2021-11-28 - 11:27:39pm', '0935xxxxxxx', 'Tran Tien', 'tiennguyentran201@gmail.com', 'Nguyễn Như Ý', '0912312313', 'Việt Nam', 'Huế', 'Thành phố Huế', '36 Nguyễn Trọng Nhân', '1220000', 'Trần Tiến', 'Mới'),
-(68665, '2021-11-22', '08:40:01am', '2021-11-22 - 08:40:01am', '0935640559', 'Nguyễn Trần Tiến', 'tientumtim201@gmail.com', 'Nguyễn Như Ý', '0899243755', 'Việt Nam', 'Huế', 'Huyện Hương Trà', '63 Nguyễn Trọng Nhân', '1420000', 'Nguyễn Trần Tiến', 'Mới'),
-(72099, '2021-12-4', '03:11:58pm', '2021-12-4 - 03:11:58pm', '0912312313', 'Nguyễn Như Ý', 'ua25052004@gmail.com', 'Nguyễn Như Ý', '0912312313', 'Việt Nam', 'Huế', 'Thành phố Huế', '36 Nguyễn Trọng Nhân', '4200000', 'Nguyễn Như Ý', 'Mới'),
-(73003, '2021-12-1', '11:12:27pm', '2021-12-1 - 11:12:27pm', '0912312313', 'Tran Tien', 'tiennguyentran201@gmail.com', 'Nguyễn Như Ý', '0912312313', 'Việt Nam', 'Huế', 'Thành phố Huế', '36 Nguyễn Trọng Nhân', '3020000', 'Trần Tiến', 'Mới'),
-(83998, '2021-12-4', '03:15:08pm', '2021-12-4 - 03:15:08pm', '0912312313', 'Nguyễn Như Ý', 'ua25052004@gmail.com', 'Nguyễn Như Ý', '0912312313', 'Việt Nam', 'Huế', 'Thành phố Huế', '36 Nguyễn Trọng Nhân', '6000000', 'Nguyễn Như Ý', 'Mới'),
-(88705, '2021-12-4', '11:48:14am', '2021-12-4 - 11:48:14am', '0912312313', 'Nguyễn Như Ý', 'ua25052004@gmail.com', 'Nguyễn Trần Tiến', '0935640559', 'Việt Nam', 'Huế', 'Thành phố Huế', '36 Nguyễn Trọng Nhân', '7400000', 'Nguyễn Như Ý', 'Đang chờ xử lí');
+(14479, '2021-11-19', '07:16:10pm', '2021-11-19 - 07:16:10pm', '0935640559', 'Lê Quang Huy', 'huyquang@gmail.com', 'Trần Viết Nhân', '0147258369', 'Việt Nam', 'Đà Nẵng', 'Đà Nẵng', '470 Trần Đại nghĩa', '6020000', 'Lê Quang Huy', 'Đang chờ xử lí'),
+(15366, '2021-11-20', '10:14:58pm', '2021-11-20 - 10:14:58pm', '0935640559', 'Lê Quang Huy', 'huyquang@gmail.com', 'Trần Viết Nhân', '0147258369', 'Việt Nam', 'Đà Nẵng', 'Đà Nẵng', '470 Trần Đại nghĩa', '4520000', 'Lê Quang Huy', 'Mới'),
+(23889, '2021-11-19', '07:36:32pm', '2021-11-19 - 07:36:32pm', '0935640559', 'Lê Quang Huy', 'huyquang@gmail.com', 'Trần Viết Nhân', '0147258369', 'Việt Nam', 'Đà Nẵng', 'Đà Nẵng', '470 Trần Đại nghĩa', '4722000', 'Lê Quang Huy', 'Đang chờ xử lí'),
+(24980, '2021-12-4', '03:20:40pm', '2021-12-4 - 03:20:40pm', '0912312313', 'Lê Quang Huy', 'huyquang@gmail.com', 'Trần Viết Nhân', '0147258369', 'Việt Nam', 'Đà Nẵng', 'Đà Nẵng', '470 Trần Đại nghĩa', '7500000', 'Nguyễn Như Ý', 'Đang chờ xử lí'),
+(27763, '2021-12-7', '03:50:23pm', '2021-12-7 - 03:50:23pm', '0905132132', 'Lê Quang Huy', 'huyquang@gmail.com', 'Trần Viết Nhân', '0147258369', 'Việt Nam', 'Đà Nẵng', 'Đà Nẵng', '470 Trần Đại nghĩa', '6400000', 'Trần Lê Anh Đức', 'Mới'),
+(32932, '2021-12-4', '03:14:04pm', '2021-12-4 - 03:14:04pm', '0912312313', 'Trần Viết Nhân', 'vietnhan@gmail.com', 'Trần Viết Nhân', '0147258369', 'Việt Nam', 'Đà Nẵng', 'Đà Nẵng', '470 Trần Đại nghĩa', '4000000', 'Nguyễn Như Ý', 'Mới');
 
 -- --------------------------------------------------------
 
@@ -1100,11 +1087,11 @@ CREATE TABLE `tbl_state` (
 --
 
 INSERT INTO `tbl_state` (`id_state`, `id_city`, `state`, `total`) VALUES
-(1, 1, 'Thành phố Huế', '20000'),
-(2, 1, 'Huyện A Lưới', '20000'),
-(3, 1, 'Huyện Nam Đông', '25000'),
+(1, 1, 'Thành phố Đà Nẵng', '20000'),
+(2, 1, 'Quận Hoà Vang', '20000'),
+(3, 1, 'Ngũ Hành Sơn', '25000'),
 (4, 1, 'Huyện Phong Điền', '20000'),
-(5, 1, 'Huyện Phú Lộc', '20000'),
+(5, 1, 'Quận Cẩm Lệ', '20000'),
 (6, 1, 'Huyện Phú Vang', '20000'),
 (7, 1, 'Huyện Quảng Điền', '20000'),
 (8, 1, 'Huyện Hương Thủy', '20000'),
@@ -1547,3 +1534,6 @@ COMMIT;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+
+
+

@@ -26,6 +26,8 @@
     <link rel="stylesheet" href="<?php echo BASE_URL ?>public/css/app.css">
     <link rel="stylesheet" href="<?php echo BASE_URL ?>public/css/jquery-ui.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    
+
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -43,24 +45,7 @@
                         <nav class="navbar">
                             <ul class="navbar_menu">
                                 <li><a href="<?php echo BASE_URL ?>">Trang chủ</a></li>
-                                <!-- <li class="subnav">Quần
-                                    <i class="fas fa-caret-down"></i>
-                                    <ul class="sub_menu">
-                                        <li><a href="">Quần ngắn</a></li>
-                                        <li><a href="">Quần dài</a></li>
-                                        <li><a href="">Quần bó</a></li>
-                                    </ul>
-                                </li>
-                                <li class="subnav">Áo
-                                    <i class="fas fa-caret-down"></i>
-                                    <ul class="sub_menu">
-                                        <li><a href="">Áo ngắn</a></li>
-                                        <li><a href="">Áo tay dài</a></li>
-                                        <li><a href="">Áo bó</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="">Giày</a></li>
-                                <li><a href="">Thực phẩm</a></li> -->
+            
                                 <?php print_r($menu); ?>
                             </ul>
                             <ul class="navbar_user" style="margin-left: 10px;">
